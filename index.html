@@ -11,7 +11,7 @@
  /* ヘッダー */
  <header class="site-header">
   <div class="container">
-   <h1 class="logo">ヨモラボ</1>
+   <h1 class="logo">
    <nav class="nav">
     <a href="#top">トップ</a>
     <a href="#about">管理人紹介</a>
@@ -21,34 +21,28 @@
    </nav>
   </div>
 </header>
-    
-  /* トップセクション */
-<section id="top" class="hero">
- <div class="container">
-  <h2>自作アプリと学習記録を公開中。</h2>
-  <p>Webエンジニア目指してコツコツ制作しています。</p>
-  <a class="btn" href="#apps">作品を見る</a>
- </div>
-</section>
-  
- <main>
-    <h1>ヨモラボ</h1>
-    <p>ヨモラボへようこそ！</p>
-    <p>
-        こんにちは、よもらぼの管理人です。<br>
-        このサイトでは、自作アプリや学習記録を公開しています。<br>
-    <h2>管理人自己紹介</h2>
-    <img src="images/myham1.png" alt="プロフィール画像">
+
+/* 自己紹介セクション */
+<main class="container">
+ <section id="about">
+    <h3>管理人自己紹介</h3>
+    <img src="images/myham1.png" alt="プロフィール画像" class="avatar">
     <ul>
         <li>仙台高専総合工学科 卒</li>
         <li>電力会社勤務3年</li>
         <li>現在：製造職（昼夜二交代・月45h残業の残業）のハードワーカー</li>
         <li>webエンジニアを目指してコツコツ勉強中！</li>
     </ul>
-    
+</section>
+
+/* 自作アプリ紹介セクション */
+<section id="apps">
     <h3>自作アプリ紹介</h3>
-    <p>
-        <a href="https://omikuji-2.onrender.com" target="_blank" rel="noopener noreferrer">
+    <div class="card-grid">
+      <article class="card">
+        <h4>おみくじアプリ</4>
+        <p>Flask＋Renderでデプロイした初作品。</p>
+        <a class="btn" href="https://omikuji-2.onrender.com" target="_blank">開く</a>
         おみくじアプリはこちら！
         </a><br>
     <small>※読み込みに十数秒かかる可能性があります。</small>
@@ -57,7 +51,6 @@
 </body>
 
 </html>
-
 
 
 
