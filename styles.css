@@ -1,0 +1,118 @@
+/* 基本レイアウト */
+* { box-sizing: border-box; }
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 中央揃え用の共通コンテナ */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ヘッダーとナビ */
+.site-header {
+  background-color: #0078d7;
+  color: white;
+  padding: 15px 0;
+}
+.logo { margin: 0; font-size: 1.8em; }
+.nav { margin-top: 8px; }
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.nav a:hover,
+.nav a:focus-visible { text-decoration: underline; }
+
+/* ヒーローセクション */
+.hero {
+  background: linear-gradient(to right, #0078d7, #00b4db);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero h2 { font-size: 1.8em; margin-bottom: 10px; }
+
+/* 通常リンク（軽め） */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+a:hover,
+a:focus-visible { text-decoration: underline; }
+
+/* ボタン化するリンクは .btn を付ける */
+a.btn {
+  color: #fff;
+  background-color: #0077ff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+a.btn:hover,
+a.btn:focus-visible { background-color: #005fcc; }
+
+/* メインカード */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* 見出し/本文 */
+h1 {
+  color: #0066cc;
+  font-size: 2.2em;
+  margin-bottom: 0.2em;
+}
+p { font-size: 1.1em; margin: 10px 0 20px; }
+h2, h3 {
+  color: #333;
+  border-left: 5px solid #0066cc;
+  padding-left: 10px;
+  margin: 40px 0 20px;
+  text-align: left;
+}
+
+/* プロフィール画像（全imgではなく限定） */
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  margin: 10px 0 20px;
+  object-fit: cover;
+}
+
+/* 自己紹介リスト */
+ul {
+  list-style-type: "💡 ";
+  text-align: left;
+  display: inline-block;
+  padding-left: 20px;
+  font-size: 1.05em;
+}
+
+small { display: block; color: #777; margin-top: 10px; }
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  main { margin: 20px; padding: 20px; }
+  .avatar { width: 140px; height: 140px; }
+  h1 { font-size: 1.8em; }
+}
