@@ -71,8 +71,9 @@ a.btn {
     text-decoration: none;
     margin-top: 10px;
     transition: 0.3s;
+    }
 a.btn:hover,
-a.focus-visible {text-decoration: underline;}
+a.btn:focus-visible {text-decoration: underline;}
 
 main {
     max-width: 800px;
@@ -104,7 +105,7 @@ h2, h3 {
     text-align: left;
 }
 /* プロフィール画像 */
-img {
+.avatar {
     width: 180px;
     height: 180px;
     border-radius: 50%;
