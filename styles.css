@@ -1,10 +1,45 @@
+/* 基本レイアウト */
 body {
     font-family: "Noto Sans JP", sans-serif;
-    background-color: #f7f9fc;
+    background-color: #f8fafc;
     color: #333;
     margin: 0;
-    padding: 0;
-    text-align: center;
+    text-height: 1.6;
+}
+
+/* 中央揃え用の共通コンテナ */
+.container {
+    width:90%;
+    max-width:900px;
+    margin: 0 auto;
+}
+
+/* ヘッダーとナビ */
+.site-header {
+    background-color:#0078d7;
+    color: white;
+    padding: 15px 0;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.nav {
+    margin-top: 8px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nava:hover {
+    text-decoration: underline;
 }
 
 main {
